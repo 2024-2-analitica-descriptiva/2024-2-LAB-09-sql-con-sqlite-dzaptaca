@@ -42,7 +42,7 @@
 --  4  E  555.323077
 --
 --  >>> Escriba su codigo a partir de este punto <<<
---  
+-- 
 WITH CRUCE AS (SELECT t1.*,t2.* FROM tbl1 AS t1 INNER JOIN tbl2 AS t2 ON t1.K1 = t2.K1)
 SELECT K0, ROUND(avg(c21),2) 'avg(c21)'
 FROM CRUCE
