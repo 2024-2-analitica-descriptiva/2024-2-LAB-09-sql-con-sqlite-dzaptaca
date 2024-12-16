@@ -41,11 +41,7 @@
 --
 --  >>> Escriba su codigo a partir de este punto <<<
 --
-SELECT CAST(CAST(c23 AS DATESTAMP) AS CHAR) AS 'strftime(''%Y'', c23)',
-CASE 
-    WHEN CAST(CAST(c23 AS DATESTAMP) AS CHAR) ='2019' THEN CEILING(avg(c21) * POWER(10, 13)) / POWER(10, 13)
-    ELSE ROUND(avg(c21),13)
-END AS 'avg(c21)'
+SELECT CAST(CAST(c23 AS DATESTAMP) AS CHAR) AS 'strftime(''%Y'', c23)', ROUND(avg(c21),2) 'avg(c21)'
 
 FROM tbl2
 GROUP BY CAST(c23 AS DATESTAMP)
