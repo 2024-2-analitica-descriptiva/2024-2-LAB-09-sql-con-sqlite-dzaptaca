@@ -38,3 +38,6 @@
 --
 --  >>> Escriba su codigo a partir de este punto <<<
 -- 
+SELECT COUNT(*)
+FROM tbl1
+WHERE CAST(c14 AS DATESTAMP)=2018
