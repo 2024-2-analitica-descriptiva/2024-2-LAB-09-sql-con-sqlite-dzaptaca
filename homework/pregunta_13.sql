@@ -43,7 +43,7 @@
 -- 
 --  >>> Escriba su codigo a partir de este punto <<<
 --  
-SELECT K0, DECIMAL(ROUND(avg(c12),2),2) AS 'avg(c12)'
+SELECT K0, CAST(ROUND(avg(c12),2) AS DECIMAL(5,2)) AS 'avg(c12)'
 FROM tbl1
 WHERE c13>400
 GROUP BY K0;
